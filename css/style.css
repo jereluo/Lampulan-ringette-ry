@@ -26,9 +26,13 @@ h1 {
 
 .buttons {
     padding-top: 5rem;
+    padding-left: 23rem;
+    padding-right: 23rem;
+    padding-bottom: 3rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
+    justify-content:space-between;
 }
 
 .buttons button {
@@ -36,7 +40,7 @@ h1 {
     grid-gap: 8px;
     align-items: center;
     background: 0 0;
-    background-color: beige;
+    background-color: white;
     border: 1px solid #000;
     border-radius: 15px;
     cursor: pointer;
@@ -67,6 +71,14 @@ button:hover {
     display: flex;
 }
 
+.nav-text {
+    color: rgba(5, 5, 5, 0.5);
+    padding-top: 3px;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 
 /*Kuvat*/
 
@@ -80,7 +92,7 @@ button:hover {
 
 .gallery img {
     width: 350px;
-    height: 400px;
+    height: 350px;
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
@@ -125,24 +137,61 @@ footer {
 .calendar {
     display: flex;
     flex-direction: column;
-    background: whitesmoke;
+    background: rgba(255, 255, 255, 0.1);
     width: fit-content;
+    border-radius: 10px;
+    padding-bottom: 25px;
 }
 
 .event {
-    padding-bottom: 50px;
+    padding: 25px;
 }
+
+.event a:link, a:visited {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+.event a:hover, a:active {
+    color: rgb(49, 125, 224) !important;
+  }
 
 .event-content {
     border-bottom: 1px solid rgb(0, 0, 0);
     background-color: white;
+    border-radius: 10px;
+    padding: 5px;
 }
 
 .event-date {
-    color: red;
-    background: beige;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    color: white;
+    background: rgba(161, 197, 218, 0.5);
     width: fit-content;
     height: fit-content;
+    border-radius: 10px;
+}
+
+.event-add {
+    border-bottom: 1px solid rgb(0, 0, 0);
+    color: white;
+    background: rgba(161, 197, 218, 0.5);
+    width: 25px;
+    height: 25px;
+    border-radius: 10px;
+}
+.event-add h3 {
+    position:relative;
+    top: -7px;
+}
+
+.line {
+    display: flex;
+    padding-top: 25px;
+    width: 450px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2)
 }
 
 
